@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- NOTE: lang: indica la lingua del contenuto | dir: indica la direzione di scrittura. ltr, left to right, da sinistra a destra. -->
+<html lang="it" dir="ltr">
+
+  <head>
+    <!-- NOTE: title=titolo che appare accanto la favicon -->
+    <title>libreria codici html v.0.2.0</title>
+    <!-- NOTE: Editor: Paolo Carrai -->
+  </head>
+
+
+  <body>
+    <!-- NOTE: h1=Heading 1 (titolo grande) -->
+    <h1>ELEMENTI BASE</h1><br>
+
+    <!-- NOTE: div: content division element -->
+    <div>
+      <!-- NOTE: sono dei contenitori di elementi.
+      Possono essere utili per semplificare il codice ma anche per creare insiemi di elementi con medesime caratteristiche -->
+    </div>
+
+    <!-- NOTE: Come andare a capo, come creare link, come fare la linea divisoria -->
+    <div>
+      <!-- NOTE: br serve per andare a capo. (scrivere senza usare alcun tag ci riporta esattamente quello che abbiamo scritto come se fosse un paragrafo. Per andare a capo sarà però necessario usare br) -->
+      link consigliati per imparare il codice <br>
+
+      <!-- NOTE: anchor element per creare hyperlink -->
+      <!-- NOTE: in Atom automaticamente quando si scrive il codice può comparire una finestra con la scritta "more" che rimanda direttamente alle info sul sito di developer mozzilla. -->
+      <a href="https://www.w3schools.com/">w3schools</a>
+      <a href="https://developer.mozilla.org/en-US/">developer mozzilla</a>
+      <a href="https://stackoverflow.com/">stackoverflow</a>
+      <a href="https://codepen.io//">codepen</a>
+
+      <!-- NOTE:hr=linea divisoria  -->
+      <hr>
+    </div>
+
+<!-- NOTE: Span: è un contenitore inline. Come div non ha alcun impatto nella visione della pagina, ma serve per strutturare il codice -->
+    <div>
+          <div>contenuto fuori span e dentro div<span>contenuto dentro span e div</span></div>
+          <span>contenuto all'interno di span e fuori div</span>
+          <div>contenuto fuori span, dentro div con br finale</div><br>
+          <span>contenuto all'interno di span e fuori div con br finale</span><br>
+        </div>
+
+<!-- NOTE: titoli -->
+    <div>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </div>
+
+<!-- NOTE: paragrafo -->
+    <div>
+        <!-- NOTE: Per scrivere Lorem ipsum ecc... basta digitare lorem ed Atom riconosce automaticamente la frase completa -->
+        <!-- NOTE: scrittura obliqua: Emphasis elemnent -->
+        <p><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</em></p>
+        <!-- NOTE: scrittura paragrafo normale -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- NOTE: scrittura semplice del testo -->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+
+<!-- NOTE: lista non ordinata di elementi -->
+    <div>
+      <!-- NOTE: Unordered list item -->
+      <ul>
+        <!-- NOTE:list item: indica la singola voce della lista non ordinata o ordinata  -->
+        <li>punto x</li>
+        <li>punto y</li>
+        <li>punto z</li>
+      </ul>
+    </div>
+
+<!-- NOTE: liste ordinate di elementi -->
+    <div>
+      <!-- NOTE: ordered list: linsta ordinata -->
+      <ol>
+        <!-- NOTE: li: list item + strong:grassetto -->
+        <li><strong>primo punto</strong></li>
+          <!-- NOTE: le liste non oridnate all'interno di liste ordinate vengono rappresentate atomaticamente con puntino non pieno -->
+          <ul>
+            <li>1.A</li>
+            <li>1.B</li>
+              <!-- NOTE: ulteriori liste non ordinate create all'interno di liste non oridnate verrano rappresentate automaticamente con pallino diverso -->
+              <ul>
+                <li>1.B2</li>
+              </ul>
+          </ul>
+        <li><strong>secondo punto</strong></li>
+        <li><strong>terzo punto</strong></li>
+            <!-- NOTE: ordered list di lettere maiuscole -->
+            <ol type="A">
+                <li>punto a</li>
+                <li>punto b</li>
+                <li>punto c <br><Span><em>descrizione sintetica punto c</em></span></li>
+            </ol>
+      </ol>
+    </div>
+
+<!-- NOTE: Entità HTML (caratteri speciali) -->
+        <div>
+          <h4>Entità HTML, caratteri speciali</h4>
+          <a href="https://www.toptal.com/designers/htmlarrows/symbols/">toptal symbols</a>
+          <p>&#36; &#162; &#163; &#164; &#169; &#9742; &frac35; #8716; </p>
+        </div>
+
+<hr><br>
+<h1>IMMAGINI</h1><br>
+
+<!-- NOTE: immagine web, su locale -->
+    <div>
+
+      <!-- NOTE: immagine collegata ad un link web -->
+      <strong>Immagine web</strong><br>
+      <img src="https://www.psicosocial.it/wp-content/uploads/2020/10/immagine-fissa-si-muove.jpg" alt="immagine online"><br>
+
+      <!-- NOTE: immagine su spazio locale -->
+      <strong>Immagine locale</strong><br>
+      <img src="Radianti.png">
+
+    </div>
+
+
+
+<hr><br>
+<h1>TABELLE</h1><br>
+
+<!-- NOTE: tabella semplice -->
+    <div>
+        <table>
+          <!-- NOTE: The Table Row element: corrisponde ad una riga della tabella -->
+          <tr>
+            <!-- NOTE: The Table Data Cell element: corrisponde ad una cella della tabella -->
+            <!-- NOTE: Se inserisco più <td></td> questi elementi verranno inseirti all'interno della riga -->
+            <td>Alleagaato Immagine 1</td>
+            <td>Allegato immagine 2</td>
+          </tr>
+          <tr>
+            <td>immagine online  </td>
+            <td>immagine locale  </td>
+          </tr>
+        </table>
+    </div>
+
+<hr><br>
+<h1>INPUT</h1><br>
+
+<!-- NOTE: input type basilari: text/password/date/checkbox/radio/email/color/file/range/time/submit + select + textarea -->
+    <div>
+
+      <!-- NOTE: input type text: per inserire stringhe da compilare. Per esempio per inserire il nome utente -->
+      <p>inserisci testo</p>
+      <input type="text">
+
+
+      <!-- NOTE: input type password: inserisce stringhe da compilare nascondendo i caratteri. Sono utili per ospitare password -->
+      <p>inserisci password</p>
+      <input type="password">
+
+      <!-- NOTE: input type date: per insereire date -->
+      <p>inserisci data</p>
+      <input type="date">
+
+      <!-- NOTE: input type  checkbox: per fare delle caselle di controllo o semplicemente della caselle da spuntare -->
+      <p>Metti il segno di spunta </p>
+      <input type="checkbox">
+
+      <!-- NOTE: input type radio: per fare delle liste con seleziona singola dei punti. Utili per esempio per questionari a risposta singola.  -->
+      <p>Seleziona il punto</p>
+      <input type="radio">
+
+      <!-- NOTE: input type email: per inserire delle email  -->
+      <p>inserisci la tua email</p>
+      <input type="email">
+
+      <!-- NOTE: input type button: per inserire dei bottoni -->
+      <p>clicca qui per completare</p>
+      <input type="button">
+
+      <!-- NOTE: input type color: per selezionare dei colori -->
+      <p>clicca qui per scegliere il colore</p>
+      <input type="color">
+
+      <!-- NOTE: input type file: per scegliere un file -->
+      <p>scegli un file</p>
+      <input type="file">
+
+      <!-- NOTE: input type range: per selezionareun range -->
+      <p>scegli un range</p>
+      <input type="range">
+
+      <!-- NOTE: input type time: per selezionare un'orario -->
+      <p>scegli un'rario preciso</p>
+      <input type="time">
+
+      <!-- NOTE: input type submit: per inviare dei dati  -->
+      <p>invia i dati</p>
+      <input type="submit">
+
+      <!-- NOTE: textarea: per inserire un blocco di testo. Name indica semplicemente il nome del campo -->
+      <p>Inserisci una descrizione</p>
+      <textarea name="descrizione" rows="8" cols="80"></textarea>
+
+      <!-- NOTE: select: per selezionare un elenco di scelte. -->
+      <p>seleziona una soluzione</p>
+      <select name="scelta">
+        <option value="soluzione1">soluzione tecologica</option>
+        <option value="soluzione2">soluzione innovativa</option>
+        <option value="soluzione3">soluzione sperimentale</option>
+      </select>
+
+    </div>
+
+<!-- NOTE: attributi di input type -->
+    <div>
+
+      <p><strong>Compila questo modulo</strong></p>
+      <!-- NOTE: value: fa apparire il testo scritto già all'interno della stringa -->
+      <input type="text" value="1+1="><br>
+      <input type="button" value="clicca qui se il risultato è 2"><br>
+
+      <!-- NOTE: placeholder: fa apparire delle indicazioni all'interno della stringa che scomparirarnno nel momento in cui cominceremo a digitare il testo -->
+      <input type="text" placeholder="Inserisci qui il tuo nome"><br>
+      <input type="text" placeholder="Inserisci il tuo cognome"><br>
+
+      <!-- NOTE: name: indica il nome della stringa. In altre parole il nome del campo dell'informazione inserita all'interno della stringa -->
+      <input type="text" name="latitudine" placeholder="inserisci qui la coordinata x"><br>
+      <input type="text" name="longitudine" placeholder="inserisci qui la coordinata y"><br>
+
+    </div>
+
+  </body>
+</html>
